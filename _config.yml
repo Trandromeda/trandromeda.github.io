@@ -18,6 +18,8 @@ profile_img: http://i.imgur.com/0R8FbnE.jpg
 profile: My real name is Andy Tran
 social:
   github: https://github.com/trandromeda
+  linkedin: https://ca.linkedin.com/in/andy-tran-48580b1a
+  instagram: https://www.instagram.com/trandromeda/
 
 # Build settings
 include: ["_categories"]
