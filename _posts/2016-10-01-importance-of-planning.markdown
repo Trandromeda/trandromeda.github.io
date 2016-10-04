@@ -5,8 +5,8 @@ date: 2016-10-01
 categories:
   - Process
 description: 
-image: https://unsplash.it/2000/1200
-image-sm: https://unsplash.it/500/300
+image: https://unsplash.it/2000/1200?image=998
+image-sm: https://unsplash.it/500/300?image=998
 ---
 
 Some elements in life benefit from a good dose of spontaneity, such as weekend roadtrips, ordering at a restaurant, or choosing which book to borrow from the library. Not so much with building an app from the ground up.
