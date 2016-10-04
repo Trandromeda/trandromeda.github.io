@@ -9,4 +9,4 @@ image: https://unsplash.it/2000/1200?image=937
 image-sm: https://unsplash.it/500/300?image=937
 ---
 
-WIP
+Coming Soon
