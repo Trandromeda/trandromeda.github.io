@@ -9,7 +9,7 @@ image: https://unsplash.it/2000/1200?image=937
 image-sm: https://unsplash.it/500/300?image=937
 ---
 
-The most rewarding part of my job as a coding bootcamp TA is helping ordinary people who've never seen a line of code before understand things like *loops*, *classes* or *ORMs*.
+The most rewarding part of my job as a coding bootcamp TA is helping ordinary people who've never seen a line of code before understand things like *loops*, *classes* and *ORMs*.
 
 Maybe it's because I was also a bootcamp grad, but I lean towards very descriptive, visual and elementary explanations when it comes to breaking down programming concepts. For instance, my favourite way to help people understand (one of) the uses of `tux` in Sinatra is by getting them to think of it as a sandbox, while the database lives in another sort of 'black box'. It's too much of a hassle to work with the database box directly because you need to write clunky SQL queries - that's why we create models to represent the tables in the database. When you want to interact with the database, whether it's reading data, updating data or deleting data, you just type in the name of the model (that corresponds to its database table) with an upper case. Lower case names are for your local variables that exist only in that specific instance of tux. Tux is able to understand what you want and then communicates with the database box in order to return your data back to you. It's both the liaison for your data and a workbench for you to play around with.
 
