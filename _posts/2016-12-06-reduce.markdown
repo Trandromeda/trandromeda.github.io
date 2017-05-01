@@ -41,7 +41,7 @@ Because we didn’t manually supply this function with an initialValue, the accu
 
 For me, it’s helpful to think of this process as akin to a factory assembly line. Each element in the array you feed to reduce() is an instruction you give to your workers to do something to the product ie accumulator. Sometimes you’ll add something to the accumulator, modify its properties, or do nothing at all.
 
-Another useful application of .reduce() is if you want to find the maximum or minimum value in a collection. 
+Another useful application of reduce() is if you want to find the maximum or minimum value in a collection. 
 
 ```javascript
 a = [2, 67, 9, 13, 92, 4, 12, 7]
@@ -52,7 +52,7 @@ a.reduce(function(acc, val) {
 })
 ```
 
-I mentioned earlier you can approach more challenging problems with reduce(), such as keeping track of an object or list of values. Take a quick look at [Day 1](https://adventofcode.com/2016/day/1) of the Advent of Code.
+I mentioned earlier you can approach more challenging problems with reduce(), such as keeping track of an object or list of values. Take a quick look at [Day 1](https://adventofcode.com/2016/day/1) of the Advent of Code. Basically, you're given a list of left or right directions and then asked to compute the distance between your starting point and the destination reached at the end of the list.
 
 There are several ways to solve this challenge, and in my first attempt I did a very crude pass at it. It worked, but when I looked at how other people approached the problem, they had much more elegant solutions with reduce().
 
