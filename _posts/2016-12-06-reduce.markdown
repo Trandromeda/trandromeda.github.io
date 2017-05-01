@@ -1,0 +1,83 @@
+---
+layout: post
+title: "reduce()"
+date: 2016-12-06
+categories:
+  - Learning
+description: 
+image: https://unsplash.it/2000/1200?image=881
+image-sm: https://unsplash.it/500/300?image=881
+---
+
+
+When I took up the [Advent of Code](https://adventofcode.com) challenge this month, reduce() became my go-to function for solving lengthy problems with lots of input data. Some of these puzzles required navigating through a city via left or right directions, figuring out the secret combination to a keypad, or counting letters in a series of made up words. 
+
+Like the name of the function implies, reduce() takes a collection of data, iterates through them, and returns a single value or object at the end.
+
+From the MDN website:
+
+> “The reduce() method applies a function against an accumulator and each element in the array (from left to right) to reduce it to a single value.“
+
+> `Syntax: arr.reduce(callback, [initialValue])`
+
+The callback takes up to four parameters:
+
+  + accumulator
+  + currentValue
+  + currentIndex
+  + array
+
+[(source)](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce?v=control)
+
+Think of the accumulator as the thing that is constantly being modified based on the elements (instructions) that you’re feeding into the function. The simplest and most apparent use case for reduce() is doing summation. The MDN website does a good job of demonstrating how it works:
+
+```javascript
+[0, 1, 2, 3, 4].reduce(function(acc, val) {
+     return acc + val;
+})
+```
+
+Because we didn’t manually supply this function with an initialValue, the accumulator (acc) is the first value of the array, 0. The callback is called on index 1 of the array, which has a value of 1. It returns 0 (acc)  + 1 (val) = 1. The accumulator is now 1. The callback moves onto the next element, 2, and returns 1 + 2 = 3. The accumulator is now 3. And so on and so forth.
+
+For me, it’s helpful to think of this process as akin to a factory assembly line. Each element in the array you feed to reduce() is an instruction you give to your workers to do something to the product ie accumulator. Sometimes you’ll add something to the accumulator, modify its properties, or do nothing at all.
+
+Another useful application of .reduce() is if you want to find the maximum or minimum value in a collection. 
+
+```javascript
+a = [2, 67, 9, 13, 92, 4, 12, 7]
+
+a.reduce(function(acc, val) {
+  let result = acc < val ? acc : val;
+  return result
+})
+```
+
+I mentioned earlier you can approach more challenging problems with reduce(), such as keeping track of an object or list of values. Take a quick look at [Day 1](https://adventofcode.com/2016/day/1) of the Advent of Code.
+
+There are several ways to solve this challenge, and in my first attempt I did a very crude pass at it. It worked, but when I looked at how other people approached the problem, they had much more elegant solutions with reduce().
+
+Here is a snippet:
+
+```javascript
+  directions.reduce((state, dir) => {
+      if (state.found) return state
+
+      state.dir = nav[state.dir[dir[0]]]
+
+      for (let i = 0, j = +dir.slice(1); i < j && !state.found; i++) {
+          state.pos[state.dir.plane] += state.dir.offset
+          key = `x${state.pos.x}y${state.pos.y}`
+
+          if (mem[key]) state.found = true
+          else mem[key] = true
+      }
+
+      return state
+  }, { dir: nav.n, pos: { x: 0, y: 0 }, found: false })
+```
+
+Let’s take a closer look at what’s happening here. We’re supplying the function with an initialValue, the object `{ dir: nav.n, pos: { x: 0, y: 0 }, found: false }`. This is the accumulator ie `state. dir` is the instruction that we’ve parsed from the data file, consisting of L or R and a numeral ie L3. 
+
+Our function/assembly line is iterating over the instructions and then updating state.pos to track -every single step- taken to reach the next position. For instance, if we start at {0, 0} and our function receives R4, then `state.pos` will become {1, 0}, {2, 0}, {3, 0} and finally {4, 0}. `state.dir` will also be updated to reflect the latest direction we are pointing. The other calculations in that function are figuring out the second part of the challenge, but the main takeaway here is that reduce() can be used for much more than just maths - it can be used to track how an object changes when given a list of instructions to do something to it.
+
+Participating in challenges like the Advent of Code is a great way to learn new things about your favourite coding language, or to discover innovative ways to solve real-life problems. I find it tremendously helpful to solve the problem on your own first, and then see how other people do it better/faster/more elegantly. That is part of what makes web development so fun and fulfilling!
