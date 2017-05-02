@@ -4,15 +4,15 @@ title: "reduce()"
 date: 2016-12-12
 categories:
   - Learning
-description: 
-image: https://unsplash.it/2000/1200?image=881
-image-sm: https://unsplash.it/500/300?image=881
+description:
+image: https://unsplash.it/2000/1200?image=1078
+image-sm: https://unsplash.it/500/300?image=1078
 ---
 
 
 When I took up the [Advent of Code](https://adventofcode.com) challenge this month, reduce() became my go-to function for solving lengthy problems with lots of input data. Some of these puzzles required navigating through a city via left or right directions, figuring out the secret combination to a keypad, or counting letters in a series of made up words. 
 
-Like the name of the function implies, reduce() takes a collection of data, iterates through them, and returns a single value or object at the end.
+As the name of the function implies, reduce() takes a collection of data, iterates through it, and returns a single value or object at the end.
 
 From the MDN website:
 

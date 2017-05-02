@@ -1,0 +1,47 @@
+---
+layout: post
+title: "My Web Dev Bootcamp Experience"
+date: 2016-12-12
+categories:
+  - Personal
+description: 
+image: http://i.imgur.com/6d6uaa6.png
+image-sm: http://i.imgur.com/Zpc9TL3.jpg
+---
+
+Two and a half years after graduating from my web developer bootcamp, people still approach me to ask what the experience was like and if I’d recommend it to others.
+
+*tl dr*: it was a phenomenal experience and yes I would recommend it, IF you are the sort of person who would enjoy programming. How can you know if you’d enjoy programming if you’ve never done it before? Well, do you like:
+
+* Problem solving
+* Puzzles
+* Making
+* Figuring things out on your own
+* Being in front of a computer a lot
+* Geeky shit?
+
+
+If you answered yes to most of the above, then there’s a good chance you’d fit right into a programmer role. Otherwise, visit [www.codecademy.com](https://www.codecademy.com/) and do a few exercises to see if they pique your curiosity or just make you feel frustrated.
+
+Before I signed up for the bootcamp, I deliberated on the decision for 6 months. I heard about this particular school because they organized an event called the HTML500 - when I tried to register, all the spots were already full. But I contacted them anyway and they told me to come tour the school. At that time in my life, I had never even heard of a web dev bootcamp before.
+
+What struck me most about the school was how approachable everyone was, and how interested they seemed in your well-being and who you are as a person. There was no pressure to get me to enrol. Instead, I met one of the co-founders and told him about my interest in health care, and he connected me to Hacking Health (and thereby changed my life forever). 
+
+I ended up being on the organizing team for Hacking Health Vancouver, and it wasn’t until I went to my first hackathon that my desire to learn how to code was cemented. Seeing a room full of motivated and passionate people building something over the span of 24 hours was just really fucking cool. I wanted to be like them.
+
+There were no exaggerations made about how grueling the bootcamp would be. A typical day would begin with a lecture-style lesson at 9AM (usually involving a live coding session done by the instructor as he or she walked through principles, examples and best practices) that ended at 10 or 11, and the rest of the day was left for us to solve a series of puzzles and assignments on our own. 
+
+It felt like the challenges were always two or three difficulty levels higher than where we were at, forcing us to elevate ourselves to where we needed to be. Like running a race, but the entire track is always uphill and the wind is blowing in your face. And you’d do this every single day.
+
+Halfway through the course and also at the end of it, you’re required to build a more feature-packed application, either by yourself or with others. My midterm project was a time capsule app called *Claira* that allowed you to write letters and send them to yourself in the future, with some simple AI built in to supply you with writing prompts. My final project was a mobile web app for tracking your deliveries, allowing you to communicate with the driver if you were unavailable or needed to change the pick-up time (while automating and optimizing the best driving route for the delivery person). It was called Notify.
+
+However, this style of learning was as exhilarating as it was excruciating. Our first reaction upon seeing a day’s set of problems was usually, ‘What the hell is this?’ But by day’s end we’d have pored over the material thoroughly enough that we could start using them in applications we were building. That feeling of conquering something that only 8 hours prior seemed impossible was euphoric.
+
+The people who excelled in this course were those who welcomed challenge, who loved learning, and who weren’t afraid to ask for support.
+
+The curriculum taught at my school has changed greatly since I graduated, but the core skills remained the same: how to think like a programmer and how to find the answers you need on your own. With the course being only 8 weeks in length, it’s enough to grasp the fundamentals and ‘git gud’ at them, but definitely not enough to emerge as a professional web developer from the get go. There will be more obstacles down the road; difference is now you have the tools to face them.
+
+I intentionally didn’t mention the name of this bootcamp at the start of the post, but now that we’re at the end I can say it: [Lighthouse Labs](https://lighthouselabs.ca/). They have schools in Vancouver and Toronto  and each is staffed by some of the friendliest people you’ll ever meet. I think back to my time at Lighthouse with much fondness and nostalgia, and truly feel like I got more out of those 8 weeks than I did during my 4 years of undergraduate schooling (in terms of learning material only).
+
+Anyone can learn how to code, but not everyone may like it. If the thought of enrolling in a web developer bootcamp excites you, then that’s already a good sign.
+
