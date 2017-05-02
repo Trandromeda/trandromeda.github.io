@@ -57,6 +57,10 @@
 
     color: $color-white;
 
+    h1 {
+      text-align: center;
+    }
+
     span {
       @extend %letter-spacing;
 
